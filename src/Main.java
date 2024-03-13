@@ -9,6 +9,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // dichiarazione Customer e Orders
+
+
+        // Es 1
+
         List<Product> productsList = getProductList(10);
         System.out.println("Prodotti generati random");
         System.out.println(productsList);
@@ -17,11 +22,8 @@ public class Main {
         System.out.println("Prodotti Books con prezzo > 100");
         System.out.println(booksListPriceOver100);
 
-        // letto male la consegna non è così per l'es 2 :(
-        List<Product> productsBabyCategory = productsList.stream().filter(product -> product.getCategory().equals("Baby")).toList();
-        System.out.println(" ");
-        System.out.println("Libri categoria Baby");
-        System.out.println(productsBabyCategory);
+
+        // Es 2
 
 
     }
