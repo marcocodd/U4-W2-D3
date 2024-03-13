@@ -6,6 +6,16 @@ public class Product {
     private String category;
     private double price;
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", category='" + category + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
     public Product(long id, String name, String category, double price) {
         this.id = id;
         this.name = name;
